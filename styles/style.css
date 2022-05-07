@@ -1,0 +1,393 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* и элемента с модификатором вида ключ-значение */
+/*header*/
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  position: relative;
+  display: flex;
+  background-color: #f2f2f2;
+  margin-bottom: 100px;
+  z-index: -1;
+}
+
+.header__logo {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  z-index: 2;
+}
+
+.logo {
+  height: 32px;
+  width: 228px;
+}
+
+.header__title-block {
+  width: 730px;
+  align-self: center;
+  margin-left: 64px;
+  z-index: 2;
+}
+
+.header__title {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+.header__subtitle {
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
+  z-index: -1;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+/*header end*/
+
+/*main*/
+
+/*block-1*/
+
+.description__two-columns-block {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__breif-block {
+  width: 175px;
+}
+
+.two-columns__brief {
+  margin: 0px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-block {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__span-accent {
+  margin: 30px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+/*block-1 end*/
+
+
+/*block-2*/
+
+.digits {
+  margin-bottom: 100px;
+}
+
+.digits__section-title {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.digits__section-subtitle {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+.table__cell {
+  list-style: none;
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading {
+  margin :0px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.table__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.table__author {
+  margin-top: 20px;
+}
+/*block-2 end*/
+
+/*block-3*/
+
+.feynman {
+  min-height: 890px;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: -1;
+}
+
+.feynmab__title_block {
+  width: 648px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.feynman__title {
+text-align: center;
+line-height: 1.15;
+font-size: 120px;
+font-weight: 700;
+z-index: 1;
+padding-top: 100px;
+}
+
+.feynman__subtitle {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  z-index: 1;
+}
+
+.feynman__link {
+  position:absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  
+}
+
+.feynman__img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+/*block-3 end*/
+
+/*block-4*/
+  .kaufman {
+    background-color:#1f1f1f;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .kaufman__title {
+    text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+  color: white;
+  z-index: 1;
+  }
+
+  .kaufman__subtitle {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  color: white;
+  z-index: 1;
+  }
+   
+  .kaufman__triangl_img {
+    position: absolute;
+    top: 0px;
+    right: -210px;
+    width: 877px;
+    height: 877px;
+    z-index: 0;
+  }
+
+  .table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+    list-style: none;
+    z-index: 1;
+  }
+  
+  .table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+  z-index: 1;
+  }
+
+  .table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
+  }
+
+  .table__theme_dark {
+    z-index: 1;
+    margin-bottom: 150px;
+  }
+/*block-4*/
+
+/*footer*/
+.footer {
+  margin: 0;
+  background-color: #1f1f1f;
+  color: white;
+  padding-bottom: 20px;
+  min-height: 350px;
+}
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-height: 350px;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.footer__columns-content_copyryght {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  margin:18px 0px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__columns-content_info {
+  text-align: left;
+}
+
+.footer__columns_content-social {
+  text-align: left;
+}
+
+
+.footer__column-heading {
+  margin: 0px;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.footer__columns-list {
+  list-style: none;
+  margin-bottom: 16px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__columns-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  z-index: 3;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: white;
+}
+
+/*footer*/
+

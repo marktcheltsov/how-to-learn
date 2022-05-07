@@ -328,7 +328,7 @@ padding-top: 100px;
   padding-bottom: 20px;
   min-height: 350px;
 }
-.footer__block {
+.footer__columns {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -366,6 +366,7 @@ padding-top: 100px;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
+  list-style: none;
 }
 
 .footer__columns-list {
@@ -389,3 +390,4 @@ padding-top: 100px;
 }
 
 /*footer*/
+

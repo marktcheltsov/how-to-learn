@@ -1,3 +1,7 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,10 +11,9 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  
 }
 
-
-/* и элемента с модификатором вида ключ-значение */
 /*header*/
 
 .header {
@@ -24,7 +27,7 @@
   z-index: -1;
 }
 
-.header__logo {
+.logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
@@ -36,21 +39,19 @@
   width: 228px;
 }
 
-.header__title-block {
-  width: 730px;
-  align-self: center;
-  margin-left: 64px;
-  z-index: 2;
-}
-
 .header__title {
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
   z-index: 2;
+  width: 730px;
+  margin: 0;
+  margin-left: 64px;
+  align-self: center;
 }
 
 .header__subtitle {
+  margin:0;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -91,7 +92,7 @@
 
 /*block-1*/
 
-.description__two-columns-block {
+.two-columns {
   margin: 0 auto;
   width: 80%;
   margin-bottom: 100px;
@@ -99,19 +100,16 @@
   justify-content: space-between;
 }
 
-.two-columns__breif-block {
-  width: 175px;
-}
-
 .two-columns__brief {
-  margin: 0px;
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  width: 175px;
 }
 
-.two-columns__main-block {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
 }
@@ -145,17 +143,17 @@
   margin-bottom: 100px;
 }
 
-.digits__section-title {
-  text-align: center;
+.section-title {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
+  text-align: center;
 }
 
-.digits__section-subtitle {
+.section-subtitle {
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -163,6 +161,7 @@
   line-height: 34px;
   font-weight: normal;
 }
+
 .table {
   width: 1100px;
   margin: 0 auto;
@@ -179,7 +178,7 @@
 }
 
 .table__heading {
-  margin :0px;
+  margin: 0;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
@@ -195,6 +194,7 @@
 .table__author {
   margin-top: 20px;
 }
+
 /*block-2 end*/
 
 /*block-3*/
@@ -206,19 +206,15 @@
   z-index: -1;
 }
 
-.feynmab__title_block {
+.feynman__title {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 700;
+  z-index: 1;
+  padding-top: 100px;
   width: 648px;
   margin: 0 auto;
-  z-index: 1;
-}
-
-.feynman__title {
-text-align: center;
-line-height: 1.15;
-font-size: 120px;
-font-weight: 700;
-z-index: 1;
-padding-top: 100px;
 }
 
 .feynman__subtitle {
@@ -230,7 +226,7 @@ padding-top: 100px;
 }
 
 .feynman__link {
-  position:absolute;
+  position: absolute;
   right: 48px;
   top: 50%;
   line-height: 51px;
@@ -238,86 +234,68 @@ padding-top: 100px;
   font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
-  
+
 }
 
 .feynman__img {
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  left: 0;
+  bottom: 0;
   z-index: -1;
 }
 
 /*block-3 end*/
 
 /*block-4*/
-  .kaufman {
-    background-color:#1f1f1f;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-  }
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
 
-  .kaufman__title {
-    text-align: center;
-  width: 60%;
-  margin: 0 auto;
+.kaufman__title {
   margin-top: 90px;
-  margin-bottom: 20px;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 700;
   color: white;
   z-index: 1;
-  }
+}
 
-  .kaufman__subtitle {
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: normal;
+.kaufman__subtitle {
   color: white;
   z-index: 1;
-  }
-   
-  .kaufman__triangl_img {
-    position: absolute;
-    top: 0px;
-    right: -210px;
-    width: 877px;
-    height: 877px;
-    z-index: 0;
-  }
+}
 
-  .table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-    list-style: none;
-    z-index: 1;
-  }
-  
-  .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 700;
+.kaufman__triangl__img {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  z-index: 0;
+}
+
+.kaufman__table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  list-style: none;
   z-index: 1;
-  }
+}
 
-  .table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
+.kaufman__table__heading_theme_dark {
   z-index: 1;
-  }
+}
 
-  .table__theme_dark {
-    z-index: 1;
-    margin-bottom: 150px;
-  }
+.kaufman__table__text_theme_dark {
+  z-index: 1;
+}
+
+.kaufman__table__theme_dark {
+  z-index: 1;
+  margin-bottom: 150px;
+}
+
 /*block-4*/
 
 /*footer*/
@@ -328,6 +306,7 @@ padding-top: 100px;
   padding-bottom: 20px;
   min-height: 350px;
 }
+
 .footer__columns {
   display: flex;
   justify-content: space-between;
@@ -337,7 +316,7 @@ padding-top: 100px;
   margin-bottom: 40px;
 }
 
-.footer__columns-content_copyryght {
+.footer__columns__content__copyryght {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -345,23 +324,23 @@ padding-top: 100px;
 }
 
 .footer__author {
-  margin:18px 0px;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__columns-content_info {
+.footer__columns__content__info {
   text-align: left;
 }
 
-.footer__columns_content-social {
+.footer__columns__content__social {
   text-align: left;
 }
 
 
-.footer__column-heading {
-  margin: 0px;
+.footer__column__heading {
+  margin: 0;
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
@@ -369,7 +348,7 @@ padding-top: 100px;
   list-style: none;
 }
 
-.footer__columns-list {
+.footer__columns__list {
   list-style: none;
   margin-bottom: 16px;
   line-height: 30px;
@@ -377,17 +356,16 @@ padding-top: 100px;
   font-weight: normal;
 }
 
-.footer__columns-icon {
+.footer__columns__icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   z-index: 3;
 }
 
-.footer__column-link {
+.footer__column__link {
   text-decoration: none;
   color: white;
 }
 
 /*footer*/
-

@@ -207,7 +207,7 @@
   padding-top: 100px;
   width: 648px;
   margin: 0 auto;
-  position: relative
+  position: relative;
 }
 
 .feynman__subtitle {
@@ -218,7 +218,7 @@
   z-index: 1;
   margin: 0;
   margin-top: 70px;
-  position: relative
+  position: relative;
 }
 
 .feynman__link {

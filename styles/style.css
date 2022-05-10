@@ -252,15 +252,12 @@
 .section-title_theme_dark {
   color: white;
   z-index: 1;
-  margin: 0 auto;
   margin-top: 90px;
-  margin-bottom: 20px;
 }
 
 .section-subtitle_theme_dark {
   color: white;
   z-index: 1;
-  margin: 0 auto;
 }
 
 .kaufman__triangle {
@@ -277,7 +274,6 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  list-style: none;
   z-index: 1;
 }
 
@@ -312,11 +308,11 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  min-height: 350px;
   width: 90%;
+  min-height: 250px;
 }
 
-.footer__columns_content_copyright {
+.footer__column-content_copyright {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -330,19 +326,19 @@
   font-weight: normal;
 }
 
-.footer__columns__content__block {
+.footer__column-links {
   margin: 0;
   padding: 0;
   text-align: left;
   align-self: center;
 }
 
-.footer__columns_content_info {
+.footer__column-content_info {
   margin: 0;
   text-align: left;
 }
 
-.footer__columns_content_social {
+.footer__column-content_social {
   margin: 0;
   text-align: left;
 }
@@ -358,16 +354,15 @@
   text-align: left;
 }
 
-.footer__columns-list {
+.footer__column-list {
   list-style: none;
-  margin-bottom: 16px;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   padding: 0;
 }
 
-.footer__columns-icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin: 0;
